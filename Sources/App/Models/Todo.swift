@@ -5,7 +5,7 @@ final class Todo: Model, Content {
     static let schema = "public"
     
     @ID(key: .id)
-    var id: Int
+    var id: UUID?
 
     @Field(key: "city")
     var city: String
@@ -33,7 +33,15 @@ final class Todo: Model, Content {
     
     init() { }
 
-    init(title: String) {
-        self.title = title
+    init(id: UUID? = nil, city: String, latitude: String, longitude: String, country: String, iso2: String, adminName: String, capital: String, pupulation: String) {
+        self.id = id
+        self.city = city
+        self.latitude = latitude
+        self.longitude = longitude
+        self.country = country
+        self.iso2 = iso2
+        self.adminName = adminName
+        self.capital = capital
+        self.population = population
     }
 }
