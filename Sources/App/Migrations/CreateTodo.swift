@@ -2,13 +2,20 @@ import Fluent
 
 struct CreateTodo: AsyncMigration {
     func prepare(on database: Database) async throws {
-        try await database.schema("todos")
+        try await database.schema("public")
             .id()
-            .field("title", .string, .required)
+            .field("city", .string, .required)
+            .field("lat", .string, .required)
+            .field("lng", .string, .required)
+            .field("country", .string, .required)
+            .field("iso2", .string, .required)
+            .field("admin_name", .string, .required)
+            .field("capital", .string, .required)
+            .field("population", .string, .required)
             .create()
     }
 
     func revert(on database: Database) async throws {
-        try await database.schema("todos").delete()
+        try await database.schema("public").delete()
     }
 }
