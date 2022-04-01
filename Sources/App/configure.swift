@@ -16,7 +16,7 @@ public func configure(_ app: Application) throws {
         database: "postgres"
     ), as: .psql)
 
-    app.migrations.add(CreateTodo())
+    app.migrations.add(CreateCity())
 
     app.views.use(.leaf)
 

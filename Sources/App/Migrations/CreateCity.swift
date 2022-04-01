@@ -1,8 +1,8 @@
 import Fluent
 
-struct CreateTodo: AsyncMigration {
+struct CreateCity: AsyncMigration {
     func prepare(on database: Database) async throws {
-        try await database.schema("public")
+        try await database.schema("it")
             .id()
             .field("city", .string, .required)
             .field("lat", .string, .required)
@@ -12,10 +12,11 @@ struct CreateTodo: AsyncMigration {
             .field("admin_name", .string, .required)
             .field("capital", .string, .required)
             .field("population", .string, .required)
+            .field("population_proper", .string, .required)
             .create()
     }
 
     func revert(on database: Database) async throws {
-        try await database.schema("public").delete()
+        try await database.schema("it").delete()
     }
 }
