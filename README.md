@@ -8,3 +8,4 @@ This project is about Vapor - Fluent. The purpose of it is to learn how to write
 
 
 Specifically POST, GET and DELETE requests to modify records inside the database.
+Database inside contains some information about the cities located in Italy.
