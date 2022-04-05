@@ -9,10 +9,10 @@ public func configure(_ app: Application) throws {
     // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
     app.databases.use(.postgres(
-        hostname: "localhost",
+        hostname: "dariovig.ddns.net",
         port: 5432,
         username: "postgres",
-        password: "somePassword",
+        password: "Poiuytre1!",
         database: "postgres"
     ), as: .psql)
 

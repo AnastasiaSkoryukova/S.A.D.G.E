@@ -1,13 +1,13 @@
 import Fluent
 import Vapor
 
-struct TodoController: RouteCollection {
+struct CitiesController: RouteCollection {
     func boot(routes: RoutesBuilder) throws {
         let cities = routes.grouped("cities")
         cities.get(use: index)
         cities.post(use: create)
-        cities.group(":citiesID") { todo in
-            todo.delete(use: delete)
+        cities.group(":citiesID") { cities in
+            cities.delete(use: delete)
         }
     }
 
@@ -16,16 +16,16 @@ struct TodoController: RouteCollection {
     }
 
     func create(req: Request) async throws -> Cities {
-        let todo = try req.content.decode(Cities.self)
-        try await todo.save(on: req.db)
-        return todo
+        let cities = try req.content.decode(Cities.self)
+        try await cities.save(on: req.db)
+        return cities
     }
 
     func delete(req: Request) async throws -> HTTPStatus {
-        guard let todo = try await Cities.find(req.parameters.get("citiesID"), on: req.db) else {
+        guard let cities = try await Cities.find(req.parameters.get("citiesID"), on: req.db) else {
             throw Abort(.notFound)
         }
-        try await todo.delete(on: req.db)
+        try await cities.delete(on: req.db)
         return .ok
     }
 }

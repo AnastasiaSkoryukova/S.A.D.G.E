@@ -26,18 +26,20 @@ func routes(_ app: Application) throws {
         }
         let città = try await Cities.query(on: req.db)
             .filter(\.$city == selected)
-//            .sort(\.$name)
-//            .with(\.$star)
+//            .sort(\.$)
+//            .with(\.$)
 //            .all()
             .all(\.$population)
         
+//        print(città)
         
-        let print = città.joined(separator: "")
+        let population = città.joined(separator: "")
 
 //        let selected = città.population
-        return "The city has \(print) inhabitants"
+        return "The city has \(population) inhabitants"
 //        }
     }
+    
     
 //    app.get("try") { req in
 //        return Element.query(on: .it).all()
@@ -46,5 +48,5 @@ func routes(_ app: Application) throws {
 //        }
 //    }
 
-    try app.register(collection: TodoController())
+    try app.register(collection: CitiesController())
 }

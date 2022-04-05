@@ -2,7 +2,7 @@ import Fluent
 
 struct CreateCity: AsyncMigration {
     func prepare(on database: Database) async throws {
-        try await database.schema("it")
+        try await database.schema("italy")
             .id()
             .field("city", .string, .required)
             .field("lat", .string, .required)
@@ -12,11 +12,11 @@ struct CreateCity: AsyncMigration {
             .field("admin_name", .string, .required)
             .field("capital", .string, .required)
             .field("population", .string, .required)
-            .field("population_proper", .string, .required)
+//            .field("population_proper", .string, .required)
             .create()
     }
 
     func revert(on database: Database) async throws {
-        try await database.schema("it").delete()
+        try await database.schema("italy").delete()
     }
 }
