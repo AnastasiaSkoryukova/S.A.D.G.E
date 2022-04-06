@@ -12,7 +12,6 @@ struct CreateCity: AsyncMigration {
             .field("admin_name", .string, .required)
             .field("capital", .string, .required)
             .field("population", .string, .required)
-//            .field("population_proper", .string, .required)
             .create()
     }
 

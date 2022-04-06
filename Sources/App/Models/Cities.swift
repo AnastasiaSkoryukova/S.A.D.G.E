@@ -31,13 +31,9 @@ final class Cities: Model, Content {
     @Field(key: "population")
     var population: String
     
-//    @Field(key: "population_proper")
-//    var population_proper: String
-    
     init() { }
 
     init(id: UUID? = nil, city: String, latitude: String, longitude: String, country: String, iso2: String, adminName: String, capital: String, pupulation: String
-//         ,pupulation_proper: String
     ) {
         self.id = id
         self.city = city
@@ -48,6 +44,5 @@ final class Cities: Model, Content {
         self.admin_name = admin_name
         self.capital = capital
         self.population = population
-//        self.population = population_proper
     }
 }
