@@ -18,7 +18,37 @@ We set the goal to learn how to:
 (How did we find the experience (challenges / difficulties))
 
 # Deployment information / instructions 
-(for other developers)
+The following details instructions for deploying a Vapor environment on a MAC OS (via Homebrew), and additional technologies such as a database
+
+## Install Vapor 
+```
+$ brew install vapor
+```
+
+### Create a new Vapor Project
+```
+$ vapor <project name> -n
+```
+
+### Start Vapor 
+```
+$ cd <project name>
+$ open Package.swift
+```
+
+## PostgreSQL
+```
+$ brew install postgres
+```
+
+### Installing and starting / stopping Postgresql Services
+```
+$ brew services
+$ brew services start postgresql
+$ brew services stop postgresql
+```
+
+
 
 # Technologies used and versions
 - Vapor
