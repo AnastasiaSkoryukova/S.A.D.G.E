@@ -22,7 +22,7 @@ How did we find the experience (challenges / difficulties)
 
 
 
-# 5. Deployment information / instructions 
+# Deployment information / instructions 
 (for other developers)
 
 
