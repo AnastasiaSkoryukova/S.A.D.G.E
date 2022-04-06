@@ -10,6 +10,29 @@ Why are we doing this
 
 
 
+# Learning Goals
+What did we want to learn
+
+
+
+
+# Experience
+How did we find the experience (challenges / difficulties)
+
+
+
+
+# 5. Deployment information / instructions 
+(for other developers)
+
+
+
+
+# Technologies used and versions
+Postgres, Vapor, Docker, PGAdmin etc
+
+
+
 Repo was done by @simonitalia, @AnastasiaSkoryukova, @dariovigi and @Gleswam.
 
 
