@@ -1,4 +1,13 @@
-# S.A.D.G.E
+# Nano Challenge X (Daiquiri) - Server side Swift
+
+# About (the App)
+What does the app do / how does it work
+
+
+
+# Purpose
+Why are we doing this
+
 
 
 Repo was done by @simonitalia, @AnastasiaSkoryukova, @dariovigi and @Gleswam.
