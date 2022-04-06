@@ -1,23 +1,24 @@
 # Nano Challenge X (Daiquiri) - Server side Swift
 
-# About (the App)
-What does the app do / how does it work
+# About 
 
+(What does the app do / how does it work)
 
-
-# Purpose
-Why are we doing this
+This project was build with 4th version of Vapor - web framework written in Swift which can be used to create REST APIs. It gives an opportunity to send requests to POSTGRESQL database, which contains the information about Italian cities(names, coordinates, population etc). Created routes were designed to get the information, post new records to the database and delete the records which are no longer needed. Vapor's Object Relational Mapping tool(ORM), Fluent, makes the interaction with the database type-safe and easy, without the necessity to write queries.
 
 
 
 # Learning Goals
-What did we want to learn
+(What did we want to learn)
+We set the goal to learn how to:
+- create, build and run the vapor project;
+- configure and populate a database;
 
 
 
 
 # Experience
-How did we find the experience (challenges / difficulties)
+(How did we find the experience (challenges / difficulties))
 
 
 
@@ -29,7 +30,7 @@ How did we find the experience (challenges / difficulties)
 
 
 # Technologies used and versions
-Postgres, Vapor, Docker, PGAdmin etc
+(Postgres, Vapor, Docker, PGAdmin etc)
 
 
 
