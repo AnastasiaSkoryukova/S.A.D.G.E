@@ -15,7 +15,8 @@ We set the goal to learn how to:
 - Gain experience making database record updates such as CRUD, specifically CREATE, READ and DELETE
 
 # Experience
-(How did we find the experience (challenges / difficulties))
+Our project experience was fast but quite challenging, the biggest difficulty we had is to find good resources/examples because despite the fresh community and the exhaustive documentation the framework is very new and is less used than other alternatives.
+We found quite interesting how the Vapor - Fluent framework integrates server comunication with http requests seamlessly with the swift environment, and we think it’s a great value to develop applications integrated with net services.
 
 # Deployment information / instructions 
 The following details instructions for deploying a Vapor environment on a MAC OS (via Homebrew), and additional technologies such as a database
